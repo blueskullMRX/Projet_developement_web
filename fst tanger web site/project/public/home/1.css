@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+
+/* Some resets, not essencial for this example to work */
+
+* {
+  box-sizing: border-box;
+}
+
+input {
+  opacity: 1;
+  width: 100%;
+  height: 0;
+  position: absolute;
+}
+
+/* Base styles for this example */
+
+.wrapper {
+  width: 100%; /* unfortunately width has to be set to some hard value */
+  display: flex;
+}
+
+.slide {
+  width: 0;
+}
+
+.content {
+  width: 90vw;
+  height: 40vw;
+}
+
+.wrapper {
+  margin: 30px auto;
+  margin-bottom: 0px;
+  background-color: white;
+  box-shadow: 3px 3px 20px #9E9E9E;
+}
+
+span {
+  background-color: white;
+  text-align: center;
+  line-height: 4rem;
+  width: 4rem;
+  border-radius: 8rem;
+  font-size: 2rem;
+}
+
+.content {
+  padding-top: 30px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .6s;
+  max-height: 90vh;
+  overflow-y: auto;
+  background-size: cover;
+  background-image: url("https://fstt.ac.ma/Portail2023/wp-content/uploads/2023/03/337344484_241759151573271_6868499689807891355_n-1024x683.jpg");
+  background-position: center;
+}
+
+.content2,
+.content5,
+.content6,
+.content1,
+.content3,
+.content4
+{
+}
+.content1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#i_1:checked ~ .wrapper .content1,
+#i_2:checked ~ .wrapper .content2,
+#i_3:checked ~ .wrapper .content3,
+#i_4:checked ~ .wrapper .content4,
+#i_5:checked ~ .wrapper .content5,
+#i_6:checked ~ .wrapper .content6 {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+label {
+  color: #E0E0E0;
+  transition-duration: .6s;
+  cursor: pointer;
+}
+
+#i_1:checked ~ .controls label[for="i_1"],
+#i_2:checked ~ .controls label[for="i_2"],
+#i_3:checked ~ .controls label[for="i_3"],
+#i_4:checked ~ .controls label[for="i_4"],
+#i_5:checked ~ .controls label[for="i_5"],
+#i_6:checked ~ .controls label[for="i_6"] {
+  color: #37B5B6;
+}
+.controls{
+  display: block;
+  width: 7%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -50px;
+}

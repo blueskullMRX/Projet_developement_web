@@ -1,0 +1,254 @@
+.table2{
+  margin-top: 0px;
+}
+tbody{
+  height: 250px;
+}
+.footer{
+  margin-top: 600px;
+
+}
+.containerss{
+  height: 100%;
+  width: 100%;
+}
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
+}
+  #current{
+    color: red;
+  }
+  .table {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.table2{
+    position: absolute;
+    top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    border:  1px solid;
+}
+.table2 table tr{
+    border: 1px solid;
+}
+.table2 td{
+    height: 300px;
+    border:  1px solid;
+    padding: 0px;
+}
+table {
+	width: 800px;
+	border-collapse: collapse;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+td {
+	padding: 10px;
+    height: 40px;
+	background-color: rgba(255,255,255,0.2);
+	color: #020410;
+}
+
+th {
+    padding: 20px;
+	text-align: left;
+    color: #e4e4e4;
+}
+
+thead {
+	th {
+		background-color: #020410;
+	}
+}
+
+tbody {
+	tr {
+		&:hover {
+			background-color: rgba(255,255,255,0.3);
+		}
+	}
+	td {
+		position: relative;
+		&:hover {
+			&:before {
+				content: "";
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: -9999px;
+				bottom: -9999px;
+				background-color: rgba(255,255,255,0.2);
+				z-index: -1;
+			}
+		}
+	}
+}
+#sel {
+    appearance: none;
+    outline: 10px red;
+    border: 0;
+    box-shadow: none;
+    flex: 1;
+    padding: 0 1em;
+    color: #fff;
+    background-color: #020410;
+    background-image: none;
+    cursor: pointer;
+  }
+  select::-ms-expand {
+    display: none;
+  }
+  .select {
+    position: relative;
+    display: flex;
+    width: 20em;
+    height: 3em;
+    float: left;
+    overflow: hidden;
+  }
+  .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1em;
+    color: #DCF2F1;
+    background-color: #0F1035;
+    transition: .25s all ease;
+    pointer-events: none;
+  }
+  .select:hover::after {
+    color: red;
+    background: white;
+  }
+  
+#select{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+}
+#txt{
+    height: 100%;
+    width: 100%;
+    resize: none;
+}
+#bt1{
+  height: 100%;
+  width: 100%;
+  border: none;
+  background: none;
+  cursor: pointer;
+  &:hover{
+    color: red;
+    font-size: larger;
+  }
+}
+#bt2{
+  margin-right: 0px;
+  height: 100%;
+  width: 100%;
+  background: #0F1035;
+  border: none;
+  color: #DCF2F1;
+  cursor: pointer;
+  &:hover{
+    color: red;
+    font-size: larger;
+    background: white;
+  }
+}
+.container{
+  margin-top: 30px;
+  margin-left: 40%;
+  width: 30%;
+  height: 3em;
+  border: none;
+}
+.save{
+  margin-right: 0px;
+  width: 10%;
+  height: 100%;
+  float: right;
+  border: none;
+}
+.animateform{
+  margin-left: 100px
+}
+form{
+  margin-left: 30%;
+  margin-top: 7%;
+  background: whitesmoke;
+  width: 35%;
+  height: 70%;
+}
+h2{
+  padding-top: 10px;
+  text-align: center;
+  padding-bottom: 10px;
+  color: #e4e4e4;
+  background-color: #020410;
+  margin-bottom: 30px;
+}
+
+.input-box input{
+    margin-left: 5%;
+    margin-bottom: 15px;
+    height: 10%;
+    width: 70%;
+    background: transparent;
+    border: 1px solid white;
+    outline: none;
+    font-size: 16px;
+    color: #e4e4e4;
+    font-weight: 500;
+    padding-right: 28px;
+    background-color: #020410;
+    padding-left: 15px;
+}
+.input-box select{
+  margin-left: 5%;
+  margin-bottom: 20px;
+  height: 10%;
+  width: 70%;
+  background: transparent;
+  border: 1px solid white;
+    outline: none;
+    font-size: 16px;
+    color: #e4e4e4;
+    font-weight: 500;
+    padding-right: 28px;
+    background-color: #020410;
+    text-align: center;
+}
+.input-box label{
+  color: #020410;
+}
+.btn{
+  margin-top: 10px;
+  margin-left: 5%;
+  height: 50px;
+  width: 70%;
+  border: none;
+  outline: none;
+  background: #0F1035;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #e4e4e4;
+  font-weight: 500;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  &:hover{
+    background-color: #e4e4e4;
+    color: #0F1035;
+    border: 1px solid #0F1035;
+    font-size: larger;
+  }
+}
